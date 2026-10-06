@@ -1,0 +1,209 @@
+:root {
+  --paper: #ede8df;
+  --ink: #1f2430;
+  --signal: #d64045;
+  --mute: #5c616b;
+  --line: #c9c3b8;
+  --max: 68rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  font-optical-sizing: auto;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.skip {
+  position: absolute;
+  left: 1rem;
+  top: -3rem;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 0.5rem 0.75rem;
+  z-index: 10;
+}
+
+.skip:focus {
+  top: 1rem;
+}
+
+.wrap {
+  width: min(var(--max), calc(100% - 2.5rem));
+  margin-inline: auto;
+}
+
+.site-header {
+  padding: 1.5rem 0 1.25rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.site-header .wrap {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.mark {
+  font-family: Anybody, "Arial Narrow", sans-serif;
+  font-stretch: 75%;
+  font-weight: 800;
+  font-size: 1.15rem;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav a {
+  font-family: Anybody, "Arial Narrow", sans-serif;
+  font-stretch: 100%;
+  font-weight: 500;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.nav a:hover,
+.nav a[aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: 0.28em;
+}
+
+main {
+  flex: 1;
+  padding: 4.5rem 0 5rem;
+}
+
+.hero {
+  margin: 0;
+}
+
+.wordmark {
+  margin: 0;
+  font-family: Anybody, "Arial Narrow", sans-serif;
+  font-stretch: 75%;
+  font-weight: 800;
+  font-size: clamp(4.25rem, 18vw, 11rem);
+  line-height: 0.82;
+  letter-spacing: -0.045em;
+}
+
+.rule {
+  width: 3.5rem;
+  height: 0.28rem;
+  margin: 1.75rem 0 1.5rem;
+  background: var(--signal);
+  border: 0;
+}
+
+.lede {
+  margin: 0;
+  max-width: 34rem;
+  color: var(--mute);
+  font-size: 1.2rem;
+}
+
+.page h1 {
+  margin: 0 0 1.25rem;
+  font-family: Anybody, "Arial Narrow", sans-serif;
+  font-stretch: 75%;
+  font-weight: 800;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+}
+
+.page p {
+  margin: 0 0 1rem;
+  max-width: 38rem;
+}
+
+.page p:last-child {
+  margin-bottom: 0;
+}
+
+.actions {
+  margin-top: 2.25rem;
+}
+
+.button {
+  display: inline-block;
+  font-family: Anybody, "Arial Narrow", sans-serif;
+  font-stretch: 100%;
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--paper);
+  background: var(--ink);
+  text-decoration: none;
+  padding: 0.7rem 1.15rem;
+}
+
+.button:hover {
+  background: #2a3140;
+}
+
+.site-footer {
+  padding: 1.25rem 0 2rem;
+  border-top: 1px solid var(--line);
+  color: var(--mute);
+  font-size: 0.95rem;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
+}
+
+@media (max-width: 40rem) {
+  .wrap {
+    width: min(var(--max), calc(100% - 1.75rem));
+  }
+
+  main {
+    padding: 3rem 0 4rem;
+  }
+
+  .site-header .wrap {
+    align-items: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
