@@ -4,13 +4,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>SISKM AI Solutions</title>
-    <meta name="description" content="SISKM AI Solutions" />
+    <meta
+      name="description"
+      content="SISKM is an AI consultancy for SaaS and enterprise teams. We design, build, and hand over systems that hold up in production."
+    />
     <link rel="icon" href="/favicon.png" type="image/png" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/styles.css" />
@@ -23,21 +26,186 @@
           <img src="/logo.png" width="1054" height="350" alt="SISKM AI Solutions" />
         </a>
         <nav class="nav" aria-label="Primary">
+          <a href="#work">Work</a>
+          <a href="#approach">Approach</a>
           <a href="/about.html">About</a>
-          <a href="/contact.html">Contact</a>
+          <a class="button" href="/contact.html">Start a conversation</a>
         </nav>
       </div>
     </header>
     <main id="content">
-      <div class="wrap hero">
-        <h1 class="hero-logo">
-          <img src="/logo.png" width="1054" height="350" alt="SISKM AI Solutions" />
-        </h1>
-        <p class="lede">A new brand. This page is a starting point — replace the copy when you are ready.</p>
-        <p class="actions">
-          <a class="button" href="/contact.html">Contact</a>
-        </p>
-      </div>
+      <section class="hero">
+        <div class="wrap">
+          <h1 class="hero-logo">
+            <img src="/logo.png" width="1054" height="350" alt="SISKM AI Solutions" />
+          </h1>
+          <h2>AI that holds up in the business you already run.</h2>
+          <p class="lede">
+            We are a consultancy for SaaS and enterprise teams. Strategy, implementation, and the
+            operating model so the work stays in production after the project ends.
+          </p>
+          <p class="actions">
+            <a class="button" href="/contact.html">Start a conversation</a>
+            <a class="button button-ghost" href="#services">What we do</a>
+          </p>
+        </div>
+      </section>
+
+      <section class="band" id="services">
+        <div class="wrap">
+          <div class="band-head">
+            <hr class="rule" />
+            <h2>What we do</h2>
+            <p>
+              Three kinds of work. Most clients start with one use case and stay for the system
+              around it.
+            </p>
+          </div>
+          <div class="offer-grid">
+            <article class="offer">
+              <h3>Advisory</h3>
+              <p>
+                Use-case selection, architecture, risk, and the business case. We help you decide
+                what to build, what to buy, and what to leave. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Integer posuere erat a ante.
+              </p>
+            </article>
+            <article class="offer">
+              <h3>Delivery</h3>
+              <p>
+                Production systems: retrieval, agents, evaluation, and the integrations your
+                operators already use. Vestibulum id ligula porta felis euismod semper. Nullam id
+                dolor id nibh ultricies vehicula ut id elit.
+              </p>
+            </article>
+            <article class="offer">
+              <h3>Enablement</h3>
+              <p>
+                Playbooks, training, and a review cadence so the work does not walk out with the
+                project team. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec
+                ullamcorper nulla non metus auctor fringilla.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="band" id="approach">
+        <div class="wrap">
+          <div class="band-head">
+            <hr class="rule" />
+            <h2>How an engagement runs</h2>
+            <p>A short path from a messy workflow to something the team will actually run.</p>
+          </div>
+          <ol class="steps">
+            <li class="step">
+              <h3>Frame</h3>
+              <p>
+                Map the workflow, the data, and the decision. Agree what “working” means in numbers
+                before anyone writes a line of code.
+              </p>
+            </li>
+            <li class="step">
+              <h3>Prove</h3>
+              <p>
+                A thin slice under production conditions. Evaluation, failure cases, and a go or no
+                go — not a slide deck of happy paths.
+              </p>
+            </li>
+            <li class="step">
+              <h3>Build</h3>
+              <p>
+                Harden, integrate, and document. Hand over with the people who will own it, in the
+                tools they already open on Monday.
+              </p>
+            </li>
+            <li class="step">
+              <h3>Embed</h3>
+              <p>
+                Review cadence, incident paths, and the next use case. The system has to survive a
+                quarter, not a demo day.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="band" id="work">
+        <div class="wrap">
+          <div class="band-head">
+            <hr class="rule" />
+            <h2>Selected work</h2>
+            <p>Placeholder engagements so the layout has weight. Replace with your own.</p>
+          </div>
+          <div class="case-grid">
+            <article class="case">
+              <p class="sector">Retail · Forecasting</p>
+              <h3>Replenishment that buyers will trust</h3>
+              <p>
+                Northline Retail asked for a demand model that buyers would actually use. We rebuilt
+                the forecast against store-level constraints and put it in the existing planning
+                sheet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis
+                consectetur purus sit amet fermentum.
+              </p>
+            </article>
+            <article class="case">
+              <p class="sector">Health · Document intake</p>
+              <h3>Intake that does not stall the case</h3>
+              <p>
+                Helios Health had a queue of unstructured packets and a team copying fields by hand.
+                We classified, extracted, and wrote into the case system they already run. Integer
+                posuere erat a ante venenatis dapibus posuere velit aliquet.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="band" id="start">
+        <div class="wrap">
+          <div class="band-head">
+            <hr class="rule" />
+            <h2>Ways to start</h2>
+            <p>Pick the smallest container that will teach you something true.</p>
+          </div>
+          <div class="model-grid">
+            <article class="model">
+              <h3>Diagnostic sprint</h3>
+              <p>
+                Four weeks. One workflow, the data behind it, and a written recommendation: build,
+                buy, or stop. Aenean lacinia bibendum nulla sed consectetur.
+              </p>
+            </article>
+            <article class="model">
+              <h3>Build and transfer</h3>
+              <p>
+                Eight to sixteen weeks. A production slice, evaluation, and a handover your team can
+                run. Curabitur blandit tempus porttitor.
+              </p>
+            </article>
+            <article class="model">
+              <h3>Embedded partnership</h3>
+              <p>
+                A quarterly cadence. We sit with your operators on the next use cases and the
+                platform they share. Fusce dapibus, tellus ac cursus commodo.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="band cta-band">
+        <div class="wrap">
+          <h2>Tell us about the workflow that is stuck.</h2>
+          <p>
+            A short note is enough: the team, the system, and what “better” would look like in a
+            quarter.
+          </p>
+          <p class="actions">
+            <a class="button" href="/contact.html">Start a conversation</a>
+          </p>
+        </div>
+      </section>
     </main>
     <footer class="site-footer">
       <div class="wrap">
