@@ -1,9 +1,9 @@
 :root {
-  --paper: #ede8df;
-  --ink: #1f2430;
-  --signal: #d64045;
-  --mute: #5c616b;
-  --line: #c9c3b8;
+  --paper: #faf9f5;
+  --ink: #072a4a;
+  --signal: #f07d2c;
+  --mute: #6b8499;
+  --line: #e6e2da;
   --max: 68rem;
 }
 
@@ -24,10 +24,9 @@ body {
   flex-direction: column;
   background: var(--paper);
   color: var(--ink);
-  font-family: "Source Serif 4", Georgia, serif;
-  font-size: 1.125rem;
+  font-family: Manrope, "Segoe UI", sans-serif;
+  font-size: 1.0625rem;
   line-height: 1.6;
-  font-optical-sizing: auto;
 }
 
 a {
@@ -59,36 +58,35 @@ img {
 }
 
 .site-header {
-  padding: 1.5rem 0 1.25rem;
+  padding: 1.15rem 0;
   border-bottom: 1px solid var(--line);
 }
 
 .site-header .wrap {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 
-.mark {
-  font-family: Anybody, "Arial Narrow", sans-serif;
-  font-stretch: 75%;
-  font-weight: 800;
-  font-size: 1.15rem;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  line-height: 1;
+.brand {
+  display: block;
+  line-height: 0;
+  flex-shrink: 0;
+}
+
+.brand img {
+  height: 2.65rem;
+  width: auto;
 }
 
 .nav {
   display: flex;
-  gap: 1.5rem;
+  gap: 1.35rem;
 }
 
 .nav a {
-  font-family: Anybody, "Arial Narrow", sans-serif;
-  font-stretch: 100%;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 0.95rem;
   text-decoration: none;
 }
@@ -101,21 +99,20 @@ img {
 
 main {
   flex: 1;
-  padding: 4.5rem 0 5rem;
+  padding: 4rem 0 5rem;
 }
 
 .hero {
   margin: 0;
 }
 
-.wordmark {
+.hero-logo {
   margin: 0;
-  font-family: Anybody, "Arial Narrow", sans-serif;
-  font-stretch: 75%;
-  font-weight: 800;
-  font-size: clamp(4.25rem, 18vw, 11rem);
-  line-height: 0.82;
-  letter-spacing: -0.045em;
+}
+
+.hero-logo img {
+  width: min(38rem, 100%);
+  height: auto;
 }
 
 .rule {
@@ -127,19 +124,17 @@ main {
 }
 
 .lede {
-  margin: 0;
+  margin: 1.75rem 0 0;
   max-width: 34rem;
   color: var(--mute);
-  font-size: 1.2rem;
+  font-size: 1.15rem;
 }
 
 .page h1 {
   margin: 0 0 1.25rem;
-  font-family: Anybody, "Arial Narrow", sans-serif;
-  font-stretch: 75%;
   font-weight: 800;
-  font-size: clamp(2.5rem, 6vw, 4rem);
-  line-height: 0.95;
+  font-size: clamp(2.25rem, 6vw, 3.5rem);
+  line-height: 1.05;
   letter-spacing: -0.03em;
 }
 
@@ -152,15 +147,28 @@ main {
   margin-bottom: 0;
 }
 
+.contact-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-width: 38rem;
+}
+
+.contact-list li + li {
+  margin-top: 0.75rem;
+}
+
+.contact-list a {
+  text-underline-offset: 0.18em;
+}
+
 .actions {
   margin-top: 2.25rem;
 }
 
 .button {
   display: inline-block;
-  font-family: Anybody, "Arial Narrow", sans-serif;
-  font-stretch: 100%;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 1rem;
   color: var(--paper);
   background: var(--ink);
@@ -169,7 +177,7 @@ main {
 }
 
 .button:hover {
-  background: #2a3140;
+  background: #0b3b64;
 }
 
 .site-footer {
@@ -194,11 +202,11 @@ main {
   }
 
   main {
-    padding: 3rem 0 4rem;
+    padding: 2.5rem 0 3.5rem;
   }
 
-  .site-header .wrap {
-    align-items: center;
+  .brand img {
+    height: 2.15rem;
   }
 }
 
