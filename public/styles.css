@@ -462,3 +462,51 @@ main {
     scroll-behavior: auto;
   }
 }
+
+.offer-grid-4 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.model .sector {
+  margin: 0 0 0.35rem;
+  color: var(--signal);
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.band .prose + .actions {
+  margin-top: 2rem;
+}
+
+.page .prose + .actions {
+  margin-top: 2rem;
+}
+
+.footer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-grid h2 {
+  margin: 0 0 0.35rem;
+  color: var(--ink);
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.footer-grid address {
+  font-style: normal;
+}
+
+.site-footer .copy {
+  font-size: 0.85rem;
+}
+
+@media (max-width: 48rem) {
+  .offer-grid-4 {
+    grid-template-columns: 1fr;
+  }
+}
